@@ -36,7 +36,7 @@ const Navbar = () => {
   },[]);
 
   return (
-    <div className="flex w-full justify-between mt-[2.5rem] sm:mt-[1.5rem]">
+    <div className="flex w-full justify-between mt-[5rem] sm:mt-[1.5rem]">
       <div><img src={Logo} alt="" className="h-[1.7rem]" /></div>
       <div className="xl:hidden lg:hidden md:hidden z-20 cursor-pointer absolute right-7 top-8" onClick={()=>setOpen(!open)}>
         <img src={open ? CloseMenu : Menu} alt=""/>
