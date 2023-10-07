@@ -35,7 +35,6 @@ const Navbar = () => {
     }
   },[]);
 
-  console.log(open)
   return (
     <div className="flex w-full justify-between mt-[2.5rem] sm:mt-[1.5rem]">
       <div><img src={Logo} alt="" className="h-[1.7rem]" /></div>
@@ -50,7 +49,7 @@ const Navbar = () => {
       <ul
         className={`flex gap-7 sm:flex-col sm:w-[80%] sm:shadow-lg sm:fixed
          sm:top-0 sm:h-[100vh] sm:bg-[#fffdfa] sm:p-10 ${open ? 'right-0' : 'right-[-110%]'}  sm:font-semibold 
-         sm:delay-200 sm:ease-in sm:transition-all`}
+         sm:delay-100 sm:ease-in sm:transition-all`}
       >
         {items.map((item) => (
           <li
