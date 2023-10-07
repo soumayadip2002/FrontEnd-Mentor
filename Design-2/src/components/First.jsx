@@ -1,6 +1,7 @@
 import React from "react";
-import DeksTopImage from "../../public/image-web-3-desktop.jpg";
-import MobileImage from "../../public/image-web-3-mobile.jpg";
+import DeksTopImage from "/image-web-3-desktop.jpg";
+import MobileImage from "/image-web-3-mobile.jpg";
+
 import { useState, useEffect } from "react";
 const First = () => {
   const [isMobile, setIsMobile] = useState(false);

@@ -1,7 +1,7 @@
 import React from "react";
-import RetroPc from "../../public/image-retro-pcs.jpg";
-import Laptop from "../../public/image-top-laptops.jpg";
-import Gaming from "../../public/image-gaming-growth.jpg";
+import RetroPc from "/image-retro-pcs.jpg";
+import Laptop from "/image-top-laptops.jpg";
+import Gaming from "/image-gaming-growth.jpg";
 const Third = () => {
   return (
     <div className="mt-[3rem] mb-[4rem] grid grid-cols-3 gap-[5rem] md:grid-cols-2 md:gap-[2rem] sm:grid-cols-1">

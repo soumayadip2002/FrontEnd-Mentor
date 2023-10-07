@@ -1,7 +1,8 @@
 import React from "react";
 import { useState } from "react";
-import Menu from '../../public/icon-menu.svg';
-import CloseMenu from '../../public/icon-menu-close.svg';
+import Menu from '/icon-menu.svg';
+import CloseMenu from '/icon-menu-close.svg';
+import Logo from '/logo.svg'
 const Navbar = () => {
   const items = [
     {
@@ -24,7 +25,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="flex w-full justify-between mt-[2.5rem] sm:mt-[1.5rem]">
-      <div className="text-3xl font-Inter font-extrabold">W.</div>
+      <div><img src={Logo} alt="" className="h-[1.7rem]" /></div>
       <div className="xl:hidden lg:hidden md:hidden z-20 cursor-pointer absolute right-7 top-8" onClick={()=>setOpen(!open)}>
         <img src={open ? CloseMenu : Menu} alt=""/>
       </div>
