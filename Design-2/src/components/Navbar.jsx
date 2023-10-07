@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import Menu from '/icon-menu.svg';
 import CloseMenu from '/icon-menu-close.svg';
@@ -23,12 +23,30 @@ const Navbar = () => {
     },
   ];
   const [open, setOpen] = useState(false);
+  
+  useEffect(()=>{
+    const handleScroll = ()=>{
+      setOpen(false)
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    return ()=>{
+      window.removeEventListener("scroll", handleScroll)
+    }
+  },[]);
+
+  console.log(open)
   return (
     <div className="flex w-full justify-between mt-[2.5rem] sm:mt-[1.5rem]">
       <div><img src={Logo} alt="" className="h-[1.7rem]" /></div>
       <div className="xl:hidden lg:hidden md:hidden z-20 cursor-pointer absolute right-7 top-8" onClick={()=>setOpen(!open)}>
         <img src={open ? CloseMenu : Menu} alt=""/>
       </div>
+
+
+      <div className={`xl:hidden lg:hidden md:hidden h-[100vh] bg-black w-[100vw] 
+      fixed  top-0 opacity-[.5] delay-200 ease-in transition-all ${open ? 'right-0' : 'right-[-110%]'}`}></div>
+      
       <ul
         className={`flex gap-7 sm:flex-col sm:w-[80%] sm:shadow-lg sm:fixed
          sm:top-0 sm:h-[100vh] sm:bg-[#fffdfa] sm:p-10 ${open ? 'right-0' : 'right-[-110%]'}  sm:font-semibold 
