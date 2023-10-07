@@ -44,7 +44,7 @@ const Navbar = () => {
 
 
       <div className={`xl:hidden lg:hidden md:hidden h-[100vh] bg-black w-[100vw] 
-      fixed  top-0 opacity-[.5] delay-200 ease-in transition-all ${open ? 'right-0' : 'right-[-110%]'}`}></div>
+      fixed  top-0 opacity-[.5] delay-100 ease-in transition-all ${open ? 'right-0' : 'right-[-110%]'}`}></div>
       
       <ul
         className={`flex gap-7 sm:flex-col sm:w-[80%] sm:shadow-lg sm:fixed
