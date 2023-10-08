@@ -11,6 +11,7 @@ function App() {
         <Second />
       </div>
       <Third />
+      <p className="text-center">created by <small className="text-base text-red-600">© soumayadip saha</small></p>
     </div>
   );
 }

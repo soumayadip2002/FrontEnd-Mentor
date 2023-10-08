@@ -44,12 +44,12 @@ const Navbar = () => {
 
 
       <div className={`xl:hidden lg:hidden md:hidden h-[100vh] bg-black w-[100vw] 
-      fixed  top-0 opacity-[.5] delay-100 ease-in transition-all ${open ? 'right-0' : 'right-[-110%]'}`}></div>
+      fixed  top-0 opacity-[.5] delay-200 ease-linear transition-all ${open ? 'right-0' : 'right-[-110%]'}`}></div>
       
       <ul
         className={`flex gap-7 sm:flex-col sm:w-[80%] sm:shadow-lg sm:fixed
          sm:top-0 sm:h-[100vh] sm:bg-[#fffdfa] sm:p-10 ${open ? 'right-0' : 'right-[-110%]'}  sm:font-semibold 
-         sm:delay-100 sm:ease-in sm:transition-all`}
+         sm:delay-200 sm:ease-linear sm:transition-all`}
       >
         {items.map((item) => (
           <li

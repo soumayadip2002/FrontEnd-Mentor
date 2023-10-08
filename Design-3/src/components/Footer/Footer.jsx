@@ -21,7 +21,7 @@ const Footer = () => {
   ];
 
   return (
-    <div className="bg-[#0b1523] pt-[10rem] pb-[5rem] sm:pt-[15rem] md:pt-[15rem]">
+    <div className="bg-[#0b1523] pt-[10rem] pb-[1rem] sm:pt-[15rem] md:pt-[15rem]">
       <div className="w-[90%] m-auto">
         <img src={Logo} alt="" className="h-[2.6rem]" />
         <div className="mt-[3rem] grid grid-cols-6 gap-x-[5rem] md:grid-cols-4 md:gap-y-[2rem] sm:grid-cols-1 sm:gap-y-[2rem]">
@@ -77,6 +77,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <p className="text-center mt-[5rem] text-white">created by <small className="text-base text-red-600">© soumayadip saha</small></p>
     </div>
   );
 };
