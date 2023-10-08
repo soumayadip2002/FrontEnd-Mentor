@@ -1,10 +1,7 @@
-import DekstopCurve from "/bg-curvy-desktop.svg";
-import MobileCurve from "/bg-curvy-mobile.svg";
 import AccessFile from "/icon-access-anywhere.svg";
 import AnyFile from "/icon-any-file.svg";
 import Security from "/icon-security.svg";
 import Collaboration from "/icon-collaboration.svg";
-import {useState, useEffect} from 'react';
 import About from "./About";
 import Testimonials from "../testimonials/Testimonials";
 import Contact from '../Contact/Contact'
@@ -35,27 +32,11 @@ const Details = () => {
       p: "Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.",
     },
   ];
-  const [isMobile, setIsMobile] = useState(false);
-  const checkMobile = ()=>{
-    setIsMobile(window.innerWidth<=450)
-  }
-  useEffect(()=>{
-    checkMobile();
-    window.addEventListener("resize", checkMobile);
-    return ()=>{
-        window.removeEventListener("resize", checkMobile);
-    }
-  });
-  console.log(isMobile)
   return (
-    <div className="top-[115%] absolute z-[-1] md:top-[75%] sm:top-[45%]">
-      <div className="text-white h-fit">
-        <img src={isMobile ? MobileCurve : DekstopCurve} alt="" />
-      </div>
-
-      <div className="bg-[#181f2a]  sm:pt-[22rem]">
+    <div className="">
+      <div className="bg-[#181f2a] pt-[10rem]">
         <div className="w-[70%] m-auto sm:w-[90%]">
-          <div className="grid grid-cols-2 gap-x-[15rem] gap-y-[8rem] md:gap-[5rem] sm:grid-cols-1 sm:gap-y-[8rem]">
+          <div className="grid grid-cols-[1fr,1fr] gap-x-[15rem] gap-y-[8rem] md:gap-[5rem] sm:grid-cols-1 sm:gap-y-[8rem]">
             {Data_items.map((item) => (
               <div key={item.id}>
                 <div className="flex justify-center">

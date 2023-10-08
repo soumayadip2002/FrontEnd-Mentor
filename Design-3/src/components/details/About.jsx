@@ -21,9 +21,9 @@ const About = () => {
         </p>
 
         <div className="mt-[1.2rem] w-fit text-[14px] font-OpenSans 
-        text-[#65e2d9]  cursor-pointer flex underline-offset-4 gap-x-2 items-center hover:text-white">
-          <p className='underline'>See how Fylo works</p>
-          <BsFillArrowRightCircleFill className='text-[1.2rem] underline hover:text-white'/>
+        text-[#65e2d9] cursor-pointer flex gap-x-2 items-center hover:text-white hover:border-white border-b-[1.5px] pb-1 border-[#65e2d9]">
+          <p>See how Fylo works</p>
+          <BsFillArrowRightCircleFill className='text-[1.2rem] hover:text-white'/>
         </div>
       </div>
     </div>

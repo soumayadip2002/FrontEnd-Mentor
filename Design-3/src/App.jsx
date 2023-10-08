@@ -4,7 +4,7 @@ import Details from "./components/details/Details";
 function App() {
   return (
     <>
-      <div className="w-[90%] m-auto">
+      <div className="">
         <Navbar />
         <Intro />
       </div>
