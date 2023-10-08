@@ -16,8 +16,10 @@ const First = () => {
     };
   },[])
   return (
-    <div className="w-auto">
-      <img src={isMobile ? MobileImage : DeksTopImage} alt="" className="sm:h-[18rem] sm:block sm:object-cover sm:object-center" />
+    <div className="w-[100%] m-auto">
+      <div className="w-[100%]">
+        <img src={isMobile ? MobileImage : DeksTopImage} alt="" className="sm:h-[18rem] w-[100%] sm:block sm:object-cover sm:object-center" />
+      </div>
       <div className="grid grid-cols-2 gap-x-0 mt-[1.5rem] sm:grid-cols-1 sm:gap-y-4 sm:mb-[3rem] md:gap-3">
         <div className="text-5xl font-bold">The Bright <br /> Future of <br /> Web 3.0?</div>
         <div>
